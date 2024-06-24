@@ -1,4 +1,5 @@
 Gesture Recognition System
+
 This project implements a real-time hand gesture recognition system using a pre-trained deep learning model. The system captures video frames from a webcam, processes these frames to extract hand gestures, and predicts the corresponding gestures using a convolutional neural network (CNN) model.
 
 Introduction
