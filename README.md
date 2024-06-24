@@ -27,7 +27,7 @@ Installation
 
 2. Install the required packages:
    ```bash
-   pip install -r requirements.txt
+   pip install -r install_packages.txt
    ```
 
 3. Ensure you have a webcam connected to your system.
