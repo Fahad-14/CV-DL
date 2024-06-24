@@ -20,10 +20,6 @@ The gesture recognition system aims to identify various hand gestures in real-ti
 
 Installation
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/gesture-recognition.git
-   cd gesture-recognition
-   ```
 
 2. Install the required packages:
    ```bash
