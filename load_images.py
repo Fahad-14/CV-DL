@@ -1,6 +1,6 @@
 import os
 import cv2
-
+import numpy as np
 def load_and_preprocess_images(gestures_dir):
     """
     Function to load and preprocess images from the specified directory.
@@ -29,12 +29,16 @@ def load_and_preprocess_images(gestures_dir):
 
     return images, labels, label_map
 
+#Dispaying the images
+
 if __name__ == "__main__":
     gestures_dir = 'gestures/'
     images = load_and_preprocess_images(gestures_dir)
 
     for img in images:
-        cv2.imshow("Image", img)
-        cv2.waitKey(30)
+        img = np.array(img) 
+        if len(img.shape) == 2:
+            cv2.imshow("Image", img)
+            cv2.waitKey(30)
 
     cv2.destroyAllWindows()
