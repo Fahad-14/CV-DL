@@ -33,7 +33,7 @@ def load_and_preprocess_images(gestures_dir):
 
 if __name__ == "__main__":
     gestures_dir = 'gestures/'
-    images = load_and_preprocess_images(gestures_dir)
+    images, label, label_map = load_and_preprocess_images(gestures_dir)
 
     for img in images:
         img = np.array(img) 
